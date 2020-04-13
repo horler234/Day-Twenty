@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32x32.png">
+    <link rel="stylesheet" href="css/app.css">
+    <title>30 Days of Code- Day 20</title>
+    <title></title>
+  </head>
+  <body>
+    <div id='calc-contain'>
+
+          <form name="calculator">
+
+            <input class="big-input" type="text" placeholder="0" name="answer" />
+
+            <div class="flex">
+              <div class="flex-btn">
+                <input class="small-btn" type="button" value=" c " onclick="calculator.answer.value = ''" />
+              </div>
+
+              <div class="flex-small-btn">
+                <input class="small-btn" type="button" value=" ( " onclick="calculator.answer.value += '('" />
+              </div>
+
+              <div class="flex-small-btn">
+                <input class="small-btn" type="button" value=" ) " onclick="calculator.answer.value += ')'" />
+              </div>
+
+              <div class="flex-btn">
+                <input class="small-btn" type="button" value=" / " onclick="calculator.answer.value += '/'" />
+              </div>
+
+              <div class="flex-btn">
+                <input class="small-btn" type="button" value=" x " onclick="calculator.answer.value += '*'" />
+              </div>
+
+              <div class="flex-btn">
+                <input class="small-btn" type="button" value=" 7 " onclick="calculator.answer.value += '7'" />
+              </div>
+
+              <div class="flex-btn">
+                <input class="small-btn" type="button" value=" 8 " onclick="calculator.answer.value += '8'" />
+              </div>
+
+              <div class="flex-btn">
+                <input class="small-btn" type="button" value=" 9 " onclick="calculator.answer.value += '9'" />
+              </div>
+
+              <div class="flex-btn">
+                <input class="small-btn" type="button" value=" - " onclick="calculator.answer.value += '-'" />
+              </div>
+            </div>
+
+            <div class="flex">
+              <div class="flex-number">
+                <div class="low-number">
+                  <input class="small-btn" type="button" value=" 4 " onclick="calculator.answer.value += '4'" />
+                </div>
+
+                <div class="low-number">
+                  <input class="small-btn" type="button" value=" 5 " onclick="calculator.answer.value += '5'" />
+                </div>
+
+                <div class="low-number">
+                  <input class="small-btn" type="button" value=" 6 " onclick="calculator.answer.value += '6'" />
+                </div>
+
+                <div class="low-number">
+                  <input class="small-btn" type="button" value=" 1 " onclick="calculator.answer.value += '1'" />
+                </div>
+
+                <div class="low-number">
+                  <input class="small-btn" type="button" value=" 2 " onclick="calculator.answer.value += '2'" />
+                </div>
+
+                <div class="low-number">
+                  <input class="small-btn" type="button" value=" 3 " onclick="calculator.answer.value += '3'" />
+                </div>
+              </div>
+
+              <div class="plus-btn">
+                <input class="plus" type="button" value=" + " onclick="calculator.answer.value += '+'" />
+              </div>
+            </div>
+
+            <div class="flex">
+              <div class="zero-btn">
+                <input class="small-btn" type="button" value=" 0 " onclick="calculator.answer.value += '0'" />
+              </div>
+
+              <div class="flex-btn">
+                <input class="small-btn" type="button" value=" . " onclick="calculator.answer.value += '.'" />
+              </div>
+
+              <div class="flex-btn">
+                <input class="small-btn" type="button" value=" = " onclick="calculator.answer.value = eval(calculator.answer.value)" />
+              </div>
+            </div>
+          </form>
+        </div>
+  </body>
+</html>
